@@ -9,7 +9,9 @@ metadata:
 rules:
   - apiGroups:
       - ""
+      - discovery.k8s.io
     resources:
+      - endpointslices
       - endpoints
       - services
       - pods
