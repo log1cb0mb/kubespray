@@ -389,7 +389,8 @@
       },
       "spec": {
         "bgp": {
-          "asNumber": "{{ local_as }}"
+          "asNumber": "{{ local_as }}",
+          "ipv4Address": "{{ hostvars[inventory_hostname].ansible_host }}/24"
         },
         "orchRefs":[{"nodeName":"{{ inventory_hostname }}","orchestrator":"k8s"}]
       }}
